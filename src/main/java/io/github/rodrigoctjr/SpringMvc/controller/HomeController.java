@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController 
 {
-	@RequestMapping("/home")
-	public void index()
+	/*@RequestMapping("/")
+	public String index()
 	{
 		System.out.println("Carregando os produtos");
-		System.out.println("volta");
-	}
+		return "hello-world";
+	}*/
 	
 	
 }

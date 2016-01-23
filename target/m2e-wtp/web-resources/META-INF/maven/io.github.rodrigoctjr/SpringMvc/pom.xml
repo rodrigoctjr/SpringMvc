@@ -11,7 +11,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <build>
-    <finalName>LearningSpring</finalName>
+    <finalName>SpringMvc</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
@@ -29,12 +29,38 @@
 	        <artifactId>spring-webmvc</artifactId>
 	        <version>4.2.0.RELEASE</version>
 	    </dependency>
-		<dependency>
+	  		<dependency>
 	        <groupId>org.apache.tomcat</groupId>
 	        <artifactId>tomcat-servlet-api</artifactId>
-	        <version>7.0.30</version>
+	        <version>7.0.56</version>
 	        <scope>provided</scope>
-	        </dependency>
+	    </dependency>
+	    <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.3.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>4.2.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4-1200-jdbc41</version>
+		</dependency>
+
 	    <dependency>
 	        <groupId>javax.servlet.jsp</groupId>
 	        <artifactId>jsp-api</artifactId>
@@ -87,6 +113,17 @@
 	        <version>1.2.16</version>
 	        <scope>runtime</scope>
 	    </dependency>
+	    <dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.1.0.Final</version>
+		</dependency>
+	    
 	</dependencies>
   
   
